@@ -6,7 +6,7 @@
 #    By: udelorme <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 17:09:04 by udelorme          #+#    #+#              #
-#    Updated: 2016/01/07 10:41:54 by udelorme         ###   ########.fr        #
+#    Updated: 2016/01/07 11:40:12 by udelorme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -90,8 +90,7 @@ $(NAME) :
 	mv $(OBJ) $(OBJREP)
 
 clean :
-	rm -rf $(OBJREP)
-	mkdir $(OBJREP)
+	cd $(OBJREP) && rm -f $(OBJ)
 
 fclean : clean
 	rm -rf $(NAME)
