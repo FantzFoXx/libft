@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 11:26:53 by udelorme          #+#    #+#             */
-/*   Updated: 2015/12/03 17:43:43 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/01/07 13:32:37 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strdup(const char *s1)
 	int		i;
 
 	dup = ft_strnew(ft_strlen(s1));
+	if (!dup)
+		return (NULL);
 	i = -1;
 	while (s1[++i] != 0)
 		dup[i] = s1[i];

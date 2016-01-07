@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 15:36:25 by udelorme          #+#    #+#             */
-/*   Updated: 2015/12/04 19:09:53 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/01/07 14:19:16 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ char		*ft_itoa(int n)
 	n = foo(n, &neg);
 	len = guess_len(n) + neg;
 	ret = ft_strnew(len);
+	if (!ret)
+		return (NULL);
 	i = len;
 	ret[len] = 0;
 	while (--i >= 0)

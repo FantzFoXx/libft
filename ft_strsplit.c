@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 14:19:22 by udelorme          #+#    #+#             */
-/*   Updated: 2015/12/03 16:51:51 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/01/07 15:17:26 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ static char	*ft_splitword(const char *s, char c)
 
 	i = 0;
 	while (s[i] != c && s[i] != 0)
-	{
 		i = i + 1;
-	}
 	split = ft_strnew(i);
 	i = 0;
 	while (s[i] != c && s[i] != 0)
@@ -42,6 +40,8 @@ char		**ft_strsplit(const char *s, char c)
 
 	cpt_w = ft_wordcount(s, c);
 	split_tab = (char **)malloc(sizeof(char *) * (cpt_w + 1));
+	if (!split_tab)
+		return (NULL);
 	split_tab[cpt_w] = NULL;
 	i = 0;
 	w_count = 0;
