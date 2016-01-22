@@ -1,25 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_trace.c                                         :+:      :+:    :+:   */
+/*   ft_freetab.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/02 18:43:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/22 16:13:25 by udelorme         ###   ########.fr       */
+/*   Created: 2016/01/22 16:42:34 by udelorme          #+#    #+#             */
+/*   Updated: 2016/01/22 16:48:01 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-void	ft_trace(const char *mess, const char *s)
+void	ft_freetab(char **tab)
 {
-	if (mess)
-	{
-		ft_putstr(mess);
-		ft_putstr(" : ");
-	}
-	else
-		ft_putstr("trace : ");
-	ft_putendl(s);
+	int i;
+
+	i = -1;
+	while (tab[++i] != 0)
+		free(tab[i]);
+	free(tab);
 }

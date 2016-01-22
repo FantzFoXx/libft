@@ -1,25 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_trace.c                                         :+:      :+:    :+:   */
+/*   ft_create_tab.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/02 18:43:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/22 16:13:25 by udelorme         ###   ########.fr       */
+/*   Created: 2016/01/22 16:35:21 by udelorme          #+#    #+#             */
+/*   Updated: 2016/01/22 16:43:37 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-void	ft_trace(const char *mess, const char *s)
+char	**ft_create_tab(int length)
 {
-	if (mess)
+	char	**tab;
+	int		i;
+	int		j;
+
+	tab = (char **)malloc(sizeof(char *) * length + 1);
+	if (!tab)
+		return (NULL);
+	tab[length] = 0;
+	i = 0;
+	while (i < length)
 	{
-		ft_putstr(mess);
-		ft_putstr(" : ");
+		tab[i] = (char *)malloc(sizeof(char) * length + 1);
+		if (!tab[i])
+			return (NULL);
+		j = 0;
+		tab[i][length] = 0;
+		while (j < length)
+		{
+			tab[i][j] = '.';
+			j++;
+		}
+		i++;
 	}
-	else
-		ft_putstr("trace : ");
-	ft_putendl(s);
+	return (tab);
 }
