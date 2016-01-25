@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/25 13:23:47 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/01/25 17:09:27 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,5 @@ char			**ft_inc_tab(char **tab, int size);
 void			ft_freetab(char **tab);
 void			ft_realloc_tab(char ***tab, size_t size);
 size_t			ft_tab_size(char **tab);
-
 
 #endif
