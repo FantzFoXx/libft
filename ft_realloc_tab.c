@@ -6,13 +6,13 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/25 13:01:39 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/25 13:05:29 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/01/25 13:23:34 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	realloc_tab(char ***tab, size_t size)
+void	ft_realloc_tab(char ***tab, size_t size)
 {
 	char	**new;
 	int		size_tab;
