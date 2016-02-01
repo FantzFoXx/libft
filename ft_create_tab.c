@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/22 16:35:21 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/22 16:43:37 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/02/01 09:16:35 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	**ft_create_tab(int length)
 		tab[i][length] = 0;
 		while (j < length)
 		{
-			tab[i][j] = '.';
+			tab[i][j] = 0;
 			j++;
 		}
 		i++;
