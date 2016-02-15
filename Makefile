@@ -6,7 +6,7 @@
 #    By: udelorme <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 17:09:04 by udelorme          #+#    #+#              #
-#    Updated: 2016/01/25 13:07:43 by udelorme         ###   ########.fr        #
+#    Updated: 2016/02/15 12:02:18 by udelorme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,11 +79,12 @@ SRC =	ft_isalpha.c  		\
 		ft_lstdup.c			\
 		ft_lstdelone.c		\
 		ft_lstdel.c			\
-		ft_create_tab.c		\
+		ft_create_square.c	\
 		ft_inc_tab.c		\
 		ft_realloc_tab.c	\
 		ft_tab_size.c		\
-		ft_freetab.c
+		ft_freetab.c		\
+		ft_print_rep.c
 
 OBJ = $(SRC:.c=.o)
 
