@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/25 13:01:39 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/25 13:23:34 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/02/18 15:35:03 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,11 @@ void	ft_realloc_tab(char ***tab, size_t size)
 	new = (char **)malloc(sizeof(char *) * (size_tab + size + 1));
 	new[size_tab + size] = NULL;
 	i = -1;
-	while (++i < size_tab)
-		new[i] = (*tab)[i];
-	free(*tab);
+	if (*tab)
+	{
+		while (++i < size_tab)
+			new[i] = (*tab)[i];
+		free(*tab);
+	}
 	*tab = new;
 }
