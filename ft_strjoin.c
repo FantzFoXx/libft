@@ -6,11 +6,12 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 12:40:34 by udelorme          #+#    #+#             */
-/*   Updated: 2016/02/25 18:09:03 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/02/26 16:52:57 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
@@ -25,6 +26,6 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	i = -1;
 	while (s1[++i] != 0)
 		new_str[i] = s1[i];
-	ft_strcat((char *)new_str, s2);
+	ft_strcat(new_str, s2);
 	return (new_str);
 }
