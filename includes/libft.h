@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/02/15 11:59:13 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/02 17:36:28 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ size_t			ft_strlcat(char *dst, const char *src, size_t size);
 int				ft_strcmp(char const *s1, char const *s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_atoi(const char *str);
-char			*ft_itoa(int n);
+char			*ft_itoa(long n);
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);

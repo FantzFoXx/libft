@@ -6,16 +6,16 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 15:36:25 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/07 14:19:16 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/02 17:36:43 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static int	guess_len(int nbr)
+static long	guess_len(long nbr)
 {
-	int i;
+	long i;
 
 	i = 1;
 	while (nbr /= 10)
@@ -23,7 +23,7 @@ static int	guess_len(int nbr)
 	return (i);
 }
 
-static int	foo(int n, int *neg)
+static long	foo(long n, long *neg)
 {
 	if (n < 0)
 	{
@@ -33,12 +33,12 @@ static int	foo(int n, int *neg)
 	return (n);
 }
 
-char		*ft_itoa(int n)
+char		*ft_itoa(long n)
 {
 	char	*ret;
-	int		len;
-	int		i;
-	int		neg;
+	long		len;
+	long		i;
+	long		neg;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
