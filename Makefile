@@ -15,7 +15,7 @@ NAME = libft.a
 BIN = exec
 INCREP = includes/
 OBJREP = obj/
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Werror -Wextra -g
 SRC =	ft_isalpha.c  		\
 		ft_memccpy.c  		\
 		ft_memmove.c  		\
