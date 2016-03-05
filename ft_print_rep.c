@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/02/15 11:53:01 by udelorme          #+#    #+#             */
-/*   Updated: 2016/02/15 12:00:22 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/05 17:22:49 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,5 @@ void	ft_print_rep(int c, size_t repeat)
 
 	i = 0;
 	while (++i <= repeat)
-	{
-		write(1, &c, 1);	
-	}
+		write(1, &c, 1);
 }

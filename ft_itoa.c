@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 15:36:25 by udelorme          #+#    #+#             */
-/*   Updated: 2016/03/02 17:36:43 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/05 17:21:57 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ static long	foo(long n, long *neg)
 char		*ft_itoa(long n)
 {
 	char	*ret;
-	long		len;
-	long		i;
-	long		neg;
+	long	len;
+	long	i;
+	long	neg;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
