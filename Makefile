@@ -6,7 +6,7 @@
 #    By: udelorme <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 17:09:04 by udelorme          #+#    #+#              #
-#    Updated: 2016/02/15 12:02:18 by udelorme         ###   ########.fr        #
+#    Updated: 2016/03/05 23:42:08 by udelorme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 BIN = exec
 INCREP = includes/
 OBJREP = obj/
-FLAGS = -Wall -Werror -Wextra -g
+FLAGS = -Wall -Werror -Wextra
 SRC =	ft_isalpha.c  		\
 		ft_memccpy.c  		\
 		ft_memmove.c  		\
