@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/16 12:51:10 by udelorme          #+#    #+#             */
-/*   Updated: 2016/03/16 13:02:54 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/16 13:06:46 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strtrim_w(const char *s)
 	char	*tmp;
 	char	*new;
 
-	tmp = ft_strnew(ft_strlen(s));
+	tmp = ft_strtrim(s);
 	i = 0;
 	j = 0;
 	while (s[i])
