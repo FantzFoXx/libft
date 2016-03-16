@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 11:17:03 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/07 14:23:19 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/16 09:05:33 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,6 @@ int				ft_atoi(const char *str)
 	if (i >= 20)
 		return (0);
 	result *= mult;
+	free(s);
 	return (result);
 }
