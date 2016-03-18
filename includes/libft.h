@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/03/16 13:02:56 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/18 18:11:22 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,6 @@ void			ft_realloc_tab(char ***tab, size_t size);
 size_t			ft_tab_size(char **tab);
 void			ft_print_rep(int c, size_t repeat);
 char			*ft_strtrim_w(const char *s);
+char			**ft_strdup_tab(char **tab);
 
 #endif
