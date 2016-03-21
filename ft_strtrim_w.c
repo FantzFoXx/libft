@@ -6,11 +6,13 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/16 12:51:10 by udelorme          #+#    #+#             */
-/*   Updated: 2016/03/17 08:14:55 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/03/21 12:54:38 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+#include <stdio.h>
 
 char	*ft_strtrim_w(const char *s)
 {
