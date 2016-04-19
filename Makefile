@@ -6,7 +6,7 @@
 #    By: udelorme <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 17:09:04 by udelorme          #+#    #+#              #
-#    Updated: 2016/03/18 18:11:19 by udelorme         ###   ########.fr        #
+#    Updated: 2016/03/23 10:31:02 by udelorme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,3 +106,5 @@ fclean : clean
 	rm -rf $(BIN)
 
 re : fclean all
+
+.PHONY: all clean fclean re
