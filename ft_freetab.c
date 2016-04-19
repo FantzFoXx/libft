@@ -6,19 +6,19 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/22 16:42:34 by udelorme          #+#    #+#             */
-/*   Updated: 2016/01/22 16:48:01 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/04/19 15:17:42 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-void	ft_freetab(char **tab)
+void	ft_freetab(char **data)
 {
 	int i;
 
 	i = -1;
-	while (tab[++i] != 0)
-		free(tab[i]);
-	free(tab);
+	while (data[++i] != 0)
+		free(data[i]);
+	free(data);
 }

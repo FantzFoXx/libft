@@ -6,30 +6,30 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/25 13:01:39 by udelorme          #+#    #+#             */
-/*   Updated: 2016/03/16 15:52:07 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/04/19 15:18:37 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	ft_realloc_tab(char ***tab, size_t size)
+void	ft_realloc_tab(char ***data, size_t size)
 {
 	char	**new;
-	int		size_tab;
+	int		size_data;
 	int		i;
 
-	size_tab = 0;
-	if (*tab)
-		while ((*tab)[size_tab] != 0)
-			size_tab++;
-	new = (char **)malloc(sizeof(char *) * (size_tab + size + 1));
-	new[size_tab + size] = NULL;
+	size_data = 0;
+	if (*data)
+		while ((*data)[size_data] != 0)
+			size_data++;
+	new = (char **)malloc(sizeof(char *) * (size_data + size + 1));
+	new[size_data + size] = NULL;
 	i = -1;
-	if (*tab)
+	if (*data)
 	{
-		while (++i < size_tab)
-			new[i] = (*tab)[i];
-		free(*tab);
+		while (++i < size_data)
+			new[i] = (*data)[i];
+		free(*data);
 	}
-	*tab = new;
+	*data = new;
 }

@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/03/18 18:11:22 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/04/19 15:19:53 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,12 +88,12 @@ void			ft_lstpush(t_list **alst, t_list *new);
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 char			**ft_create_tab(int length);
-char			**ft_inc_tab(char **tab, int size);
-void			ft_freetab(char **tab);
-void			ft_realloc_tab(char ***tab, size_t size);
-size_t			ft_tab_size(char **tab);
+char			**ft_inc_tab(char **data, int size);
+void			ft_freetab(char **data);
+void			ft_realloc_tab(char ***data, size_t size);
+size_t			ft_tab_size(char **data);
 void			ft_print_rep(int c, size_t repeat);
 char			*ft_strtrim_w(const char *s);
-char			**ft_strdup_tab(char **tab);
+char			**ft_strdup_tab(char **data);
 
 #endif
