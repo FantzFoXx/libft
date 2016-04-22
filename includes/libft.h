@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/04/19 15:19:53 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/04/22 17:19:53 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,13 @@ size_t			ft_tab_size(char **data);
 void			ft_print_rep(int c, size_t repeat);
 char			*ft_strtrim_w(const char *s);
 char			**ft_strdup_tab(char **data);
+
+/*
+** External debug functions
+ */
+
+void			ft_external_debug(char *debug, int fd);
+void			ft_close_external_debug(int fd);
+int				ft_init_external_debug(char *filename, int verbose);
 
 #endif
