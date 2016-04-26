@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/04/22 17:19:53 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/04/26 14:56:16 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,11 @@ size_t			ft_tab_size(char **data);
 void			ft_print_rep(int c, size_t repeat);
 char			*ft_strtrim_w(const char *s);
 char			**ft_strdup_tab(char **data);
+char    		*ft_implode_tab(char **data, int start, size_t len);
+int				ft_index_fmatch(char *str, char chr);
+int				ft_index_lmatch(char *str, char chr);
+int				ft_index_nmatch(char *str, char chr, int n);
+char			*ft_cut_cur_word(char *str, int index);
 
 /*
 ** External debug functions
