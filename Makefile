@@ -6,7 +6,7 @@
 #    By: udelorme <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 17:09:04 by udelorme          #+#    #+#              #
-#    Updated: 2016/04/26 14:55:58 by udelorme         ###   ########.fr        #
+#    Updated: 2016/04/29 11:09:53 by udelorme         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -95,7 +95,8 @@ SRC =	ft_isalpha.c  				\
 		ft_index_fmatch.c			\
 		ft_index_lmatch.c			\
 		ft_index_nmatch.c			\
-		ft_cut_cur_word.c
+		ft_cut_cur_word.c			\
+		ft_split_index.c
 
 OBJ = $(SRC:.c=.o)
 
