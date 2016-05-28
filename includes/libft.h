@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/04/29 11:09:39 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/05/28 15:20:19 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -132,6 +132,8 @@ typedef FT_LL			t_ll;
 
 typedef FT_UNSIGNED		t_u;
 # include "ft_debug.h"
+# define MSG_OUT_OF_MEMORY "Out-of memory."
+# define OUT_OF_MEMORY write(STDERR_FILENO, MSG_OUT_OF_MEMORY, 14);
 
 int			ft_strocu(const char *str);
 char		*ft_uitoa(unsigned int n);
@@ -156,6 +158,7 @@ long		ft_ltoa_s(long n, char *str);
 t_ul		ft_ultoa_s(unsigned long n, char *str);
 void		ft_putnbrl(long n);
 void		ft_putnbrul(t_ul n);
-
+void		*ft_memallocset(size_t size, int c);
 
 #endif
+
