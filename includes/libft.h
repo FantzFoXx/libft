@@ -110,4 +110,52 @@ void			ft_external_debug(char *debug, int fd);
 void			ft_close_external_debug(int fd);
 int				ft_init_external_debug(char *filename, int verbose);
 
+
+
+# define FT_LL long long int
+# define FT_UL long unsigned int
+# define FT_ULL long long unsigned int
+# define FT_UC unsigned char
+# define FT_UI unsigned int
+# define FT_SI short int
+# define FT_US short unsigned int
+# define FT_UNSIGNED unsigned
+
+typedef long double		t_ld;
+
+typedef FT_UC			t_uc;
+typedef FT_US			t_us;
+typedef FT_UI			t_ui;
+typedef FT_UL			t_ul;
+typedef FT_ULL			t_ull;
+typedef FT_LL			t_ll;
+
+typedef FT_UNSIGNED		t_u;
+# include "ft_debug.h"
+
+int			ft_strocu(const char *str);
+char		*ft_uitoa(unsigned int n);
+char		*ft_ltoa(long n);
+char		*ft_ultoa(t_ul n);
+char		*ft_lltoa(t_ll n);
+char		*ft_ulltoa(t_ull n);
+void		ft_putstr_width(const char *str, int n);
+void		ft_putnbr_width(int nb, int n);
+char		*ft_uitoa_base(t_ui n, char *base);
+char		*ft_ustoa_base(t_us n, char *base);
+char		*ft_stoa_base(short n, char *base);
+char		*ft_ultoa_base(t_ul n, char *base);
+char		*ft_ltoa_base(long n, char *base);
+char		*ft_lltoa_base(t_ll n, char *base);
+char		*ft_ulltoa_base(t_ull n, char *base);
+char		*ft_imtoa_base(intmax_t n, char *base);
+char		*ft_uimtoa_base(uintmax_t n, char *base);
+int			ft_itoa_s(int n, char *str);
+t_ui		ft_uitoa_s(unsigned int n, char *str);
+long		ft_ltoa_s(long n, char *str);
+t_ul		ft_ultoa_s(unsigned long n, char *str);
+void		ft_putnbrl(long n);
+void		ft_putnbrul(t_ul n);
+
+
 #endif
