@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/05/28 15:20:19 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/06/07 13:30:54 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ int				ft_index_lmatch(char *str, char chr);
 int				ft_index_nmatch(char *str, char chr, int n);
 char			*ft_cut_cur_word(char *str, int index, int *start, size_t *len);
 char			**ft_split_index(char *str, int index);
+char			*ft_str_renew(char **old, char *new);
 
 /*
 ** External debug functions
