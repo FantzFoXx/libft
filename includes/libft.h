@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/23 12:02:59 by udelorme          #+#    #+#             */
-/*   Updated: 2016/07/12 10:01:58 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/07/13 14:08:36 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,7 @@ int				ft_index_nmatch(char *str, char chr, int n);
 char			*ft_cut_cur_word(char *str, int index, int *start, size_t *len);
 char			**ft_split_index(char *str, int index);
 char			*ft_str_renew(char **old, char *new);
+void    		print_memory(const void *addr, size_t size);
 
 /*
 ** External debug functions

@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 10:54:48 by udelorme          #+#    #+#             */
-/*   Updated: 2015/11/24 11:01:08 by udelorme         ###   ########.fr       */
+/*   Updated: 2016/07/13 16:17:16 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int i;
+	const char *bak;
 
-	i = 0;
-	while (s[i] != 0)
-		i++;
-	return (i);
+	bak = s;
+	while (*s)
+		s++;
+	return (s - bak);
 }
