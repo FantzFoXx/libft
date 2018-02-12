@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/24 07:21:19 by udelorme          #+#    #+#             */
-/*   Updated: 2016/05/24 08:22:53 by udelorme         ###   ########.fr       */
+/*   Updated: 2018/02/12 14:33:33 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,7 @@ char	*ft_del_cur_word(char *str, int index)
 	while (str[index])
 	{
 		if (index < start || index >= (int)len)
-		{
-			ret[i] = str[index];
-			i++;
-		}
+			ret[i++] = str[index];
 		index++;
 	}
 	return (ret);

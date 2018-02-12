@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/26 14:32:35 by udelorme          #+#    #+#             */
-/*   Updated: 2016/04/27 14:32:20 by udelorme         ###   ########.fr       */
+/*   Updated: 2018/02/12 14:29:53 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 char	*ft_cut_cur_word(char *str, int index, int *start, size_t *len)
 {
-	//if (str[index - 1] == ' ')
-	//	index--;
 	while (index - 1 >= 0 && str[index - 1] != ' ')
 		index--;
 	*start = index;

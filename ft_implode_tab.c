@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/26 13:14:31 by udelorme          #+#    #+#             */
-/*   Updated: 2016/04/26 13:22:58 by udelorme         ###   ########.fr       */
+/*   Updated: 2018/02/12 14:33:57 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_implode_tab(char **data, int start, size_t len)
 	char	*ret;
 	char	*tmp;
 	int		i;
-	
+
 	i = start;
 	ret = ft_strdup(data[i++]);
 	while (data[i] && (start + i) < (int)len)

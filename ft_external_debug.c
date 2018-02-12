@@ -6,7 +6,7 @@
 /*   By: udelorme <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/22 15:10:51 by udelorme          #+#    #+#             */
-/*   Updated: 2016/04/22 17:19:52 by udelorme         ###   ########.fr       */
+/*   Updated: 2018/02/12 14:28:30 by udelorme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 
 void	ft_external_debug(char *debug, int fd)
 {
-	static int debug_fd = -1;
+	static int	debug_fd;
+
+	debug_fd = -1;
 	if (debug && (debug_fd != -1))
 		ft_putendl_fd(debug, debug_fd);
 	if (debug_fd == -1)
